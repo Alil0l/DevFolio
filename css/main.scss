@@ -1,0 +1,147 @@
+// No need for global rules bcs bootstrap adds it.
+$bs-main-color: #0d6efd;
+$bs-sec-color: #cde1f8;
+// Mixins
+// Adding local fonts
+@mixin font($font-family, $font-files) {
+  @each $font-file, $font-weight in $font-files {
+    @font-face {
+      font-family: "#{$font-family}-#{$font-weight}";
+      src: url("#{$font-file}.ttf");
+      font-weight: $font-weight;
+    }
+  }
+}
+$Poppins-font-files: (
+  ("../assets/fonts/Poppins-Bold", 700),
+  ("../assets/fonts/Poppins-Regular", 400),
+  ("../assets/fonts/Poppins-Light", 300),
+  ("../assets/fonts/Poppins-ExtraLight", 200)
+);
+$Raleway-font-files: (
+  ("../assets/fonts/Raleway-Black", 800),
+  ("../assets/fonts/Poppins-Bold", 700),
+  ("../assets/fonts/Poppins-Medium", 600),
+  ("../assets/fonts/Poppins-Regular", 400)
+);
+
+@include font("Raleway", $Raleway-font-files);
+@include font("Poppins", $Poppins-font-files);
+
+// Global classes
+
+.h-100vh {
+  height: 100dvh;
+}
+
+// End of  mixins and classes
+
+//  Start of the main stylesheet
+// styling header
+
+header.header {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../assets/images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  h1 {
+    font-size: 5rem;
+  }
+  span {
+    font-size: 3rem;
+  }
+}
+
+// end  of styling header
+// start styling about section
+
+.progress,
+.progress-stacked {
+  border-radius: 0;
+  height: 0.75rem;
+  background-color: #cde1f8;
+  margin: 4px 0 12px 0;
+}
+
+.sec-title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  padding: 24px 0;
+  h2 {
+    font-size: 54px;
+  }
+
+  .line {
+    width: 40px;
+    height: 6px;
+  }
+}
+
+// Section services
+
+section.services {
+  .col {
+    .card {
+      box-shadow: 0 12px 12px -10px rgba(0, 0, 0, 0.2);
+      &:hover {
+        i {
+          border: 10px solid $bs-sec-color;
+          background-color: $bs-main-color;
+          color: white;
+        }
+      }
+      i {
+        font-size: 40px;
+        width: 120px;
+        height: 120px;
+        color: black;
+        border: 10px solid $bs-main-color;
+        background-color: transparent;
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+// End of services section
+
+// Start counters section
+section.counters {
+  background-image: linear-gradient(
+      rgba($bs-main-color, 0.8),
+      rgba($bs-main-color, 0.8)
+    ),
+    url(../assets/images/post-3.jpg);
+  position: relative;
+
+  .row {
+    padding: 6rem;
+    .col {
+      .card {
+        i {
+          font-size: 30px;
+          width: 80px;
+          height: 80px;
+          border: 10px solid white;
+          background-color: transparent;
+        }
+        h5 {
+          font-size: 40px;
+        }
+        span {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

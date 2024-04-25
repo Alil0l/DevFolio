@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "Raleway-800";
+  src: url("../assets/fonts/Raleway-Black.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Raleway-700";
+  src: url("../assets/fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Raleway-600";
+  src: url("../assets/fonts/Poppins-Medium.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Raleway-400";
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins-700";
+  src: url("../assets/fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Poppins-400";
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins-300";
+  src: url("../assets/fonts/Poppins-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Poppins-200";
+  src: url("../assets/fonts/Poppins-ExtraLight.ttf");
+  font-weight: 200;
+}
+.h-100vh {
+  height: 100dvh;
+}
+
+header.header {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+header.header h1 {
+  font-size: 5rem;
+}
+header.header span {
+  font-size: 3rem;
+}
+
+.progress,
+.progress-stacked {
+  border-radius: 0;
+  height: 0.75rem;
+  background-color: #cde1f8;
+  margin: 4px 0 12px 0;
+}
+
+.sec-title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  padding: 24px 0;
+}
+.sec-title h2 {
+  font-size: 54px;
+}
+.sec-title .line {
+  width: 40px;
+  height: 6px;
+}
+
+section.services .col .card {
+  box-shadow: 0 12px 12px -10px rgba(0, 0, 0, 0.2);
+}
+section.services .col .card:hover i {
+  border: 10px solid #cde1f8;
+  background-color: #0d6efd;
+  color: white;
+}
+section.services .col .card i {
+  font-size: 40px;
+  width: 120px;
+  height: 120px;
+  color: black;
+  border: 10px solid #0d6efd;
+  background-color: transparent;
+  transition: all 0.5s;
+}
+
+section.counters {
+  background-image: linear-gradient(rgba(13, 110, 253, 0.8), rgba(13, 110, 253, 0.8)), url(../assets/images/post-3.jpg);
+  position: relative;
+}
+section.counters .row {
+  padding: 6rem;
+}
+section.counters .row .col .card i {
+  font-size: 30px;
+  width: 80px;
+  height: 80px;
+  border: 10px solid white;
+  background-color: transparent;
+}
+section.counters .row .col .card h5 {
+  font-size: 40px;
+}
+section.counters .row .col .card span {
+  font-size: 24px;
+}/*# sourceMappingURL=main.css.map */

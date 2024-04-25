@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevFolio | BS & SASS & TS</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Link Boostrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script defer src="./js/bootstrap.bundle.min.js"></script>
+    <!-- Link FontAwosome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Link Main stylesheet -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body data-bs-theme="light" class="bg-secondary-subtle">
+    <!--  Navbar -->
+    <nav class="navbar navbar-expand-lg bg-black fixed-top w-100">
+      <div class="container">
+        <a class="navbar-brand fs-3 fw-bold text-white" href="#">DevFolio</a>
+        <button
+          class="navbar-toggler bg-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 fw-medium gap-3 align-items-center"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white text-uppercase"
+                aria-current="page"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white fw-normal text-uppercase fs-6"
+                href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white fw-normal text-uppercase fs-6"
+                href="#services"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white fw-normal text-uppercase fs-6"
+                href="#work"
+                >Work</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white fw-normal text-uppercase fs-6"
+                href="#blog"
+                >Blog</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-white fw-normal text-uppercase fs-6 dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white fw-normal text-uppercase fs-6"
+                href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <header class="header text-white" id="home">
+      <div class="container">
+        <div class="row align-content-center text-center h-100vh">
+          <h1>I am Morgan Freeman</h1>
+          <span>FreeLancer</span>
+        </div>
+      </div>
+    </header>
+    <!-- Main -->
+    <main>
+      <section class="about" id="about">
+        <div class="container">
+          <div class="row bg-light py-5 px-2 px-lg-5 my-5">
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-lg-6 col-12 text-center text-lg-start">
+                  <img
+                    class="col-lg-10 col-8 rounded mb-4"
+                    src="assets/images/testimonial-2.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-lg-6 col-12">
+                  <p><span>Name:</span> Morgan Freeman</p>
+                  <p><span>Profile</span> Fullstack Developer</p>
+                  <p><span>Email:</span> mfreeman@gmail.com</p>
+                  <p><span>Phone:</span> (555) 444-3333</p>
+                </div>
+              </div>
+              <div class="skills">
+                <h4>Skills:</h4>
+                <span>Html5 90%</span>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Basic example"
+                  aria-valuenow="0"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-bar" style="width: 90%"></div>
+                </div>
+                <span>CSS3 85%</span>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Basic example"
+                  aria-valuenow="0"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-bar" style="width: 85%"></div>
+                </div>
+                <span>Javascript 75%</span>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Basic example"
+                  aria-valuenow="0"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-bar" style="width: 75%"></div>
+                </div>
+                <span>React 70%</span>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Basic example"
+                  aria-valuenow="0"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-bar" style="width: 70%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h2>About me</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Eligendi, illum, cum error architecto recusandae quidem libero
+                impedit facilis unde voluptas consequatur! Deleniti blanditiis
+                mollitia temporibus maxime eaque facilis molestiae? Suscipit.
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Obcaecati consequatur praesentium quam sequi impedit. Laudantium
+                iste dolor autem hic tempore?
+              </p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi rem eligendi illo. Nisi est mollitia quod laboriosam quo
+                magni illum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="sec-title">
+        <h2 class="text-black text-uppercase fw-bolder">Services</h2>
+        <span class="text-black-50"
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </span>
+        <div class="line bg-primary my-2"></div>
+      </div>
+      <section class="services pb-5" id="services">
+        <div class="container">
+          <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-3">
+            <div class="col mb-3">
+              <div class="card rounded-4 align-items-center py-5">
+                <i
+                  class="fa-regular fa-face-angry d-flex justify-content-center align-items-center rounded-circle"
+                ></i>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Angry Face</h5>
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore at maxime ad iste fuga natus temporibus, numquam
+                    omnis, nesciunt assumenda voluptatum esse cum iure
+                    aspernatur?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div class="card rounded-4 align-items-center py-5">
+                <i
+                  class="fa-regular fa-face-angry d-flex justify-content-center align-items-center rounded-circle"
+                ></i>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Angry Face</h5>
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore at maxime ad iste fuga natus temporibus, numquam
+                    omnis, nesciunt assumenda voluptatum esse cum iure
+                    aspernatur?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div class="card rounded-4 align-items-center py-5">
+                <i
+                  class="fa-regular fa-face-angry d-flex justify-content-center align-items-center rounded-circle"
+                ></i>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Angry Face</h5>
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore at maxime ad iste fuga natus temporibus, numquam
+                    omnis, nesciunt assumenda voluptatum esse cum iure
+                    aspernatur?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div class="card rounded-4 align-items-center py-5">
+                <i
+                  class="fa-regular fa-face-angry d-flex justify-content-center align-items-center rounded-circle"
+                ></i>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Angry Face</h5>
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore at maxime ad iste fuga natus temporibus, numquam
+                    omnis, nesciunt assumenda voluptatum esse cum iure
+                    aspernatur?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div class="card rounded-4 align-items-center py-5">
+                <i
+                  class="fa-regular fa-face-angry d-flex justify-content-center align-items-center rounded-circle"
+                ></i>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Angry Face</h5>
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore at maxime ad iste fuga natus temporibus, numquam
+                    omnis, nesciunt assumenda voluptatum esse cum iure
+                    aspernatur?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div class="card rounded-4 align-items-center py-5">
+                <i
+                  class="fa-regular fa-face-angry d-flex justify-content-center align-items-center rounded-circle"
+                ></i>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Angry Face</h5>
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Labore at maxime ad iste fuga natus temporibus, numquam
+                    omnis, nesciunt assumenda voluptatum esse cum iure
+                    aspernatur?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="counters" id="counters">
+        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 g-3">
+          <div class="col">
+            <div
+              class="card bg-transparent border-0 text-white rounded-4 align-items-center py-2"
+            >
+              <i
+                class="fa-regular fa-face-angry d-flex justify-content-center align-items-center rounded-circle"
+              ></i>
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bolder">350</h5>
+                <span class="card-text">Number of Angry Clinets</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card bg-transparent border-0 text-white rounded-4 align-items-center py-2"
+            >
+              <i
+                class="fa-regular fa-face-angry d-flex justify-content-center align-items-center rounded-circle"
+              ></i>
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bolder">350</h5>
+                <span class="card-text">Number of Angry Clinets</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card bg-transparent border-0 text-white rounded-4 align-items-center py-2"
+            >
+              <i
+                class="fa-regular fa-face-angry d-flex justify-content-center align-items-center rounded-circle"
+              ></i>
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bolder">350</h5>
+                <span class="card-text">Number of Angry Clinets</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card bg-transparent border-0 text-white rounded-4 align-items-center py-2"
+            >
+              <i
+                class="fa-regular fa-face-angry d-flex justify-content-center align-items-center rounded-circle"
+              ></i>
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bolder">350</h5>
+                <span class="card-text">Number of Angry Clinets</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
