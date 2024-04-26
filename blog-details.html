@@ -12,11 +12,39 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <!-- Link Main stylesheet -->
     <link rel="stylesheet" href="css/main.css" />
+    <!-- Extra style -->
+    <style>
+      .linebefore {
+        position: relative;
+      }
+      .linebefore::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 4px;
+        background-color: #0d6efd;
+        left: 0;
+        top: 0;
+      }
+      .underline {
+        position: relative;
+        padding-bottom: 10px;
+      }
+      .underline::after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        background-color: #0d6efd;
+        width: 15%;
+        left: 0;
+        bottom: 0;
+      }
+    </style>
   </head>
-  <body>
+  <body class="bg-body-secondary">
     <!-- Floating top button -->
     <div class="top-btn">
-      <a href="#home"> <i class="fa-solid fa-arrow-up"></i> </a>
+      <a href="#"> <i class="fa-solid fa-arrow-up"></i> </a>
     </div>
     <!-- End Floating button -->
     <!--  Navbar -->
@@ -97,5 +125,319 @@
         </div>
       </div>
     </nav>
+    <!-- Header -->
+    <header class="bg-primary active text-white">
+      <div class="container py-5">
+        <div class="row align-content-center text-center py-5 my-5">
+          <h1 class="fa-5x" id="home">BLOG DETAILS</h1>
+        </div>
+      </div>
+    </header>
+    <!-- Page Content-->
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-12 py-5">
+            <section class="blog-post bg-white p-5 my-5">
+              <div class="img mb-4">
+                <img class="w-100" src="assets/images/post-1.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h2>Lorem ipsum dolor sit adipisicing elit.</h2>
+                <p class="navs linebefore ps-3">
+                  <i class="fa-solid fa-user"></i>
+                  <a class="text-decoration-none" href="#">Jason London</a>
+                  <i class="fa-solid fa-tag"></i>
+                  <a class="text-decoration-none" href="#"> Web Design</a>
+                  <i class="fa-solid fa-comment"></i>
+                  <a class="text-decoration-none" href="#">14</a>
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                  provident ducimus eum architecto repudiandae nulla ex
+                  reiciendis delectus eos quis neque accusamus, impedit cum
+                  ratione. Sed rerum mollitia aliquam, ea optio velit culpa id
+                  veritatis obcaecati accusantium placeat debitis aliquid
+                  minima! Aut facere est soluta beatae rem, deleniti unde in
+                  molestiae corrupti, eum nisi repudiandae numquam maxime ex
+                  voluptatem. Qui veniam dolor enim consequatur, facere illum
+                  optio libero delectus earum.
+                </p>
+                <p>
+                  Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed
+                  magna dictum porta. Mauris blandit aliquet elit, eget
+                  tincidunt nibh pulvinar a. Cras ultricies ligula sed magna
+                  dictum porta. Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Donec sollicitudin molestie malesuada.
+                </p>
+                <p>
+                  Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent sapien massa, convallis a pellentesque nec, egestas
+                  non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Curabitur arcu erat, accumsan id imperdiet et, porttitor
+                  at sem. Donec rutrum congue leo eget malesuada.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                  quis lorem ut libero malesuada feugiat. Curabitur arcu erat,
+                  accumsan id imperdiet et, porttitor at sem. Vivamus suscipit
+                  tortor eget felis porttitor volutpat. Vivamus suscipit tortor
+                  eget felis porttitor volutpat. Quisque velit nisi, pretium ut
+                  lacinia in, elementum id enim.
+                </p>
+                <span class="linebefore d-block p-4 bg-white fst-italic"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer posuere erat a ante.
+                </span>
+                <p>
+                  Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed
+                  magna dictum porta. Mauris blandit aliquet elit, eget
+                  tincidunt nibh pulvinar a. Cras ultricies ligula sed magna
+                  dictum porta. Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Donec sollicitudin molestie malesuada.
+                </p>
+              </div>
+            </section>
+            <section class="blog-comments bg-white p-5 my-5">
+              <h2 class="underline">Comments (34)</h2>
+              <div class="comment-card">
+                <div class="row my-4">
+                  <div class="col-2">
+                    <img
+                      class="w-100"
+                      src="assets/images/testimonial-2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-10">
+                    <h3>Oliver Colmenares</h3>
+                    <span class="fst-italic">18 Sep 2023 </span>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Dolores reprehenderit, provident cumque ipsam temporibus
+                      maiores quae natus libero optio, at qui beatae ducimus
+                      placeat debitis voluptates amet corporis.
+                    </p>
+                    <a class="text-decoration-none" href="#">Reply</a>
+                  </div>
+                </div>
+                <div class="row my-4">
+                  <div class="col-2">
+                    <img
+                      class="w-100"
+                      src="assets/images/testimonial-4.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-10">
+                    <h3>Carmen Vegas</h3>
+                    <span class="fst-italic">29 Sep 2023 </span>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Dolores reprehenderit, provident cumque ipsam temporibus
+                      maiores quae natus libero optio, at qui beatae ducimus
+                      placeat debitis voluptates amet corporis.
+                    </p>
+                    <a class="text-decoration-none" href="#">Reply</a>
+                  </div>
+                </div>
+                <div class="row my-4 ps-5">
+                  <div class="col-2">
+                    <img
+                      class="w-100"
+                      src="assets/images/testimonial-2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-10">
+                    <h3>Oliver Colmenares</h3>
+                    <span class="fst-italic">18 Sep 2023 </span>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Dolores reprehenderit, provident cumque ipsam temporibus
+                      maiores quae.
+                    </p>
+                    <a class="text-decoration-none" href="#">Reply</a>
+                  </div>
+                </div>
+                <div class="row my-4">
+                  <div class="col-2">
+                    <img
+                      class="w-100"
+                      src="assets/images/testimonial-2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-10">
+                    <h3>Oliver Colmenares</h3>
+                    <span class="fst-italic">18 Sep 2023 </span>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Dolores reprehenderit, provident cumque ipsam temporibus
+                      maiores quae natus libero optio, at qui beatae ducimus
+                      placeat debitis voluptates amet corporis.
+                    </p>
+                    <a class="text-decoration-none" href="#">Reply</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="blog-contact bg-white p-5 my-5">
+              <h1 class="underline mb-5">Leave a Reply</h1>
+              <form action="" required>
+                <input
+                  class="form-control form-control-lg mb-4 rounded-2 fs-6"
+                  type="text"
+                  placeholder="Your Name"
+                  aria-label=".form-control-lg"
+                  required
+                />
+                <input
+                  class="form-control form-control-lg mb-4 rounded-2 fs-6"
+                  type="email"
+                  placeholder="Your Email"
+                  aria-label=".form-control-lg"
+                  required
+                />
+                <input
+                  class="form-control form-control-lg mb-4 rounded-2 fs-6"
+                  type="text"
+                  placeholder="Subject"
+                  aria-label=".form-control-lg"
+                  required
+                />
+                <textarea
+                  class="form-control mb-5"
+                  placeholder="Message"
+                  id="exampleFormControlTextarea1"
+                  rows="6"
+                ></textarea>
+                <div class="col-12">
+                  <button
+                    class="btn btn-primary rounded-pill px-5 py-3 border-5 border-primary-subtle"
+                    type="submit"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </section>
+          </div>
+          <aside class="col-lg-4 col-12 py-5">
+            <section class="search bg-white p-5 my-5">
+              <h2 class="linebefore mb-3 ps-4">Search</h2>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control rounded-0"
+                  placeholder="Search"
+                  aria-label="Recipient's username"
+                  aria-describedby="search"
+                />
+                <button
+                  class="btn text-white bg-primary rounded-0"
+                  type="button"
+                  id="search"
+                >
+                  <i class="fa-solid fa-search"></i>
+                </button>
+              </div>
+            </section>
+            <section class="recent bg-white p-5 my-5">
+              <h2 class="linebefore mb-3 ps-4">Recent Posts</h2>
+              <a
+                class="text-decoration-none text-black ps-4 mb-3 d-block"
+                href="#"
+                >- Atque placeat maiores.</a
+              >
+              <a
+                class="text-decoration-none text-black ps-4 mb-3 d-block"
+                href="#"
+                >- Lorem ipsum dolor sit amet consectetur
+              </a>
+              <a
+                class="text-decoration-none text-black ps-4 mb-3 d-block"
+                href="#"
+                >- Nam quo autem exercitationem.</a
+              >
+              <a
+                class="text-decoration-none text-black ps-4 mb-3 d-block"
+                href="#"
+                >- Atque placeat maiores.</a
+              >
+            </section>
+            <section class="archive bg-white p-5 my-5">
+              <h2 class="linebefore mb-3 ps-4">ARCHIVES</h2>
+              <a
+                class="text-decoration-none text-black ps-4 mb-3 d-block"
+                href="#"
+                >- July, 5 1999.</a
+              >
+              <a
+                class="text-decoration-none text-black ps-4 mb-3 d-block"
+                href="#"
+                >- April, 2017.
+              </a>
+              <a
+                class="text-decoration-none text-black ps-4 mb-3 d-block"
+                href="#"
+                >- Dec,23 1998.</a
+              >
+              <a
+                class="text-decoration-none text-black ps-4 mb-3 d-block"
+                href="#"
+                >- Sep, 11 2024.</a
+              >
+            </section>
+            <section class="archive bg-white p-5 my-5">
+              <h2 class="linebefore mb-3 ps-4">Tags</h2>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="#">
+                  <span class="px-3 py-2 rounded-pill bg-primary text-white">
+                    Web.
+                  </span>
+                </a>
+
+                <a href="#">
+                  <span class="px-3 py-2 rounded-pill bg-primary text-white">
+                    Mobile.
+                  </span>
+                </a>
+
+                <a href="#">
+                  <span class="px-3 py-2 rounded-pill bg-primary text-white">
+                    Devs.
+                  </span>
+                </a>
+                <a href="#">
+                  <span class="px-3 py-2 rounded-pill bg-primary text-white">
+                    Js.
+                  </span>
+                </a>
+                <a href="#">
+                  <span class="px-3 py-2 rounded-pill bg-primary text-white">
+                    React.
+                  </span>
+                </a>
+
+                <a href="#">
+                  <span class="px-3 py-2 rounded-pill bg-primary text-white">
+                    RWD.
+                  </span>
+                </a>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <!--  Start Footer Section -->
+    <footer class="text-center py-4">
+      <p class="mb-0">
+        © Copyright <span class="fw-bold">DevFolio.</span> All Rights Reserved
+      </p>
+      <span>Designed by BootstrapMade</span>
+    </footer>
   </body>
 </html>
