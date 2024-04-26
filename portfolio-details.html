@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DevFolio | Portfolio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>DevFolio | Blog</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/RouteLogo.jpeg"
+      type="image/x-icon"
+    />
     <!-- Link Boostrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <script defer src="./js/bootstrap.bundle.min.js"></script>
@@ -12,11 +16,32 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <!-- Link Main stylesheet -->
     <link rel="stylesheet" href="css/main.css" />
+    <!-- Extra style -->
+    <style>
+      .linebefore {
+        position: relative;
+      }
+      .linebefore::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 4px;
+        background-color: #0d6efd;
+        left: 0;
+        top: 0;
+      }
+      .carousel-indicators button.carbtn {
+        width: 10px;
+        height: 10px;
+        background-color: #0d6efd;
+        border-radius: 50%;
+      }
+    </style>
   </head>
-  <body>
+  <body class="bg-body-secondary">
     <!-- Floating top button -->
     <div class="top-btn">
-      <a href="#home"> <i class="fa-solid fa-arrow-up"></i> </a>
+      <a href="#"> <i class="fa-solid fa-arrow-up"></i> </a>
     </div>
     <!-- End Floating button -->
     <!--  Navbar -->
@@ -97,5 +122,104 @@
         </div>
       </div>
     </nav>
+    <!-- Header -->
+    <header class="bg-primary active text-white">
+      <div class="container py-5">
+        <div class="row align-content-center text-center py-5 my-5">
+          <h1 class="fa-5x" id="home">PORTFOLIO DETAILS</h1>
+        </div>
+      </div>
+    </header>
+    <!-- Page Content-->
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-12">
+            <section class="blog-post my-5">
+              <div class="img mb-4">
+                <div
+                  id="imgslideind"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#imgslideind"
+                      data-bs-slide-to="0"
+                      class="active carbtn"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      class="carbtn"
+                      data-bs-target="#imgslideind"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      class="carbtn"
+                      data-bs-target="#imgslideind"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="assets/images/portfolio-details-1.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/images/portfolio-details-2.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="assets/images/portfolio-details-3.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <aside class="col-lg-4 col-12">
+            <section class="search bg-white p-5 pb-2 my-5">
+              <h4 class="mb-3">Project information</h4>
+              <p><span class="fw-bold">Category:</span> Web design</p>
+              <p><span class="fw-bold">Client: </span> ASU Company</p>
+              <p><span class="fw-bold">Project date:</span> 01 March, 2020</p>
+              <p><span class="fw-bold">Project URL:</span> www.example.com</p>
+            </section>
+            <section class="search bg-white p-5 pb-2">
+              <h4 class="mb-3">This is an example of portfolio detail</h4>
+              <p>
+                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos
+                itaque inventore commodi labore quia quia. Exercitationem
+                repudiandae officiis neque suscipit non officia eaque itaque
+                enim.
+              </p>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <!--  Start Footer Section -->
+    <footer class="text-center py-4">
+      <p class="mb-0">
+        © Copyright <span class="fw-bold">DevFolio.</span> All Rights Reserved
+      </p>
+      <span>Designed by BootstrapMade</span>
+    </footer>
   </body>
 </html>
