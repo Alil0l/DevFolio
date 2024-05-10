@@ -18,4 +18,4 @@
  
 </center>
 
-![image](https://github.com/Alil0l/DevFolio/assets/137832626/72809b0a-252b-420c-b9c4-419f40000382)
+ <a href="https://alil0l.github.io/DevFolio/" target="_blank">![image](https://github.com/Alil0l/DevFolio/assets/137832626/72809b0a-252b-420c-b9c4-419f40000382)</a>
